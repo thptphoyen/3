@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="icon" href="/logo.png"/>
+<!-- Tailwind via CDN (no build) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- AOS for scroll animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Feather icons -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+<title>Liên hệ - Trường THPT Phổ Yên</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+<header class="header-glass fixed w-full z-40">
+  <div class="max-w-6xl mx-auto flex items-center gap-4 px-4 py-3">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="logo.png" class="brand-logo" alt="logo">
+      <div class="hidden sm:block">
+        <h1 class="text-xl font-bold text-slate-800">TRƯỜNG THPT PHỔ YÊN</h1>
+        <p class="text-sm text-slate-600">Vững bước tương lai • Kiến tạo tri thức</p>
+      </div>
+    </a>
+    <nav class="ml-auto hidden md:flex items-center gap-2 text-sm">
+      <a href="index.html" class="px-3 py-2 hover:text-sky-800">Trang chủ</a>
+      <a href="gioi-thieu.html" class="px-3 py-2 hover:text-sky-800">Giới thiệu</a>
+      <a href="giao-vien.html" class="px-3 py-2 hover:text-sky-800">Giáo viên</a>
+      <a href="tuyen-sinh.html" class="px-3 py-2 hover:text-sky-800">Tuyển sinh</a>
+      <a href="co-so-vat-chat.html" class="px-3 py-2 hover:text-sky-800">Cơ sở vật chất</a>
+      <a href="hoat-dong.html" class="px-3 py-2 hover:text-sky-800">Hoạt động</a>
+      <a href="cau-lac-bo.html" class="px-3 py-2 hover:text-sky-800">Câu lạc bộ</a>
+      <a href="hoi-dap.html" class="px-3 py-2 hover:text-sky-800">Hỏi đáp</a>
+      <button id="darkToggle" class="ml-3 px-2 py-1 rounded bg-white/20">🌓</button>
+    </nav>
+
+    <!-- mobile menu -->
+    <div class="md:hidden ml-auto">
+      <button id="mobileBtn" class="p-2 bg-white/10 rounded">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- SPACER for fixed header -->
+<div style="height:96px"></div>
+
+<section class="w-full" style="background-image:url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=60');background-size:cover;background-position:center;">
+  <div class="max-w-6xl mx-auto py-28 px-6">
+    <div class="bg-black/30 p-8 rounded-lg text-white" data-aos="fade-up">
+      <h2 class="text-4xl font-bold">Liên hệ</h2>
+      <p class="mt-2 text-lg">Trường THPT Phổ Yên — Liên hệ</p>
+    </div>
+  </div>
+</section>
+
+<main class="max-w-6xl mx-auto px-6 py-12">
+  
+<h3 class="text-2xl font-semibold" data-aos="fade-up">Liên hệ với chúng tôi</h3>
+<div class="grid sm:grid-cols-2 gap-6 mt-6">
+  <div class="bg-white p-6 rounded card-shadow">
+    <h4 class="font-semibold">Thông tin</h4>
+    <p class="text-sm text-slate-500 mt-2">Địa chỉ: Phổ Yên, Thái Nguyên</p>
+    <p class="text-sm text-slate-500">Điện thoại: (024) 1234 5678</p>
+    <p class="text-sm text-slate-500">Email: info@thptphoyen.edu.vn</p>
+  </div>
+  <div class="bg-white p-6 rounded card-shadow">
+    <h4 class="font-semibold">Gửi liên hệ</h4>
+    <form onsubmit="event.preventDefault();alert('Cảm ơn! Tin nhắn đã được gửi.');">
+      <input class="w-full p-3 border rounded" placeholder="Họ và tên" required><br><br>
+      <input class="w-full p-3 border rounded" placeholder="Email" required><br><br>
+      <textarea class="w-full p-3 border rounded" rows="5" placeholder="Nội dung" required></textarea><br><br>
+      <button class="btn-primary">Gửi liên hệ</button>
+    </form>
+  </div>
+</div>
+
+</main>
+
+<footer class="footer mt-12 p-8 footer">
+  <div class="max-w-6xl mx-auto text-center text-white">
+    <p class="text-sm">© 2025 Trường THPT Phổ Yên • Địa chỉ: Phổ Yên, Thái Nguyên • Điện thoại: (024) 1234 5678</p>
+  </div>
+</footer>
+
+<!-- to top -->
+<button id="toTop" class="hidden fixed bottom-6 right-6 bg-white p-3 rounded-full shadow-lg">⬆️</button>
+
+<script src="assets/js/main.js"></script>
+<script>/* initialize AOS */ if(window.AOS) AOS.init();</script>
+</body>
+</html>

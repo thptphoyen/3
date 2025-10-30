@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="icon" href="/logo.png"/>
+<!-- Tailwind via CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- AOS for scroll animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Feather icons -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+<title>Đội ngũ giáo viên - Trường THPT Phổ Yên</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+<header class="header-glass fixed w-full z-40">
+  <div class="max-w-6xl mx-auto flex items-center gap-4 px-4 py-3">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="logo.png" class="brand-logo" alt="logo">
+      <div class="hidden sm:block">
+        <h1 class="text-xl font-bold text-slate-800">TRƯỜNG THPT PHỔ YÊN</h1>
+        <p class="text-sm text-slate-600">Vững bước tương lai • Kiến tạo tri thức</p>
+      </div>
+    </a>
+    <nav class="ml-auto hidden md:flex items-center gap-2 text-sm">
+      <a href="index.html" class="px-3 py-2 hover:text-sky-800">Trang chủ</a>
+      <a href="gioi-thieu.html" class="px-3 py-2 hover:text-sky-800">Giới thiệu</a>
+      <a href="giao-vien.html" class="px-3 py-2 hover:text-sky-800 font-semibold text-sky-700">Giáo viên</a>
+      <a href="tuyen-sinh.html" class="px-3 py-2 hover:text-sky-800">Tuyển sinh</a>
+      <a href="co-so-vat-chat.html" class="px-3 py-2 hover:text-sky-800">Cơ sở vật chất</a>
+      <a href="hoat-dong.html" class="px-3 py-2 hover:text-sky-800">Hoạt động</a>
+      <a href="cau-lac-bo.html" class="px-3 py-2 hover:text-sky-800">Câu lạc bộ</a>
+      <a href="hoi-dap.html" class="px-3 py-2 hover:text-sky-800">Hỏi đáp</a>
+      <button id="darkToggle" class="ml-3 px-2 py-1 rounded bg-white/20">🌓</button>
+    </nav>
+
+    <!-- mobile menu -->
+    <div class="md:hidden ml-auto">
+      <button id="mobileBtn" class="p-2 bg-white/10 rounded">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- SPACER for fixed header -->
+<div style="height:96px"></div>
+
+<section class="w-full bg-gradient-to-r from-sky-700 to-sky-500 text-white">
+  <div class="max-w-6xl mx-auto py-24 px-6 text-center" data-aos="fade-up">
+    <h2 class="text-4xl font-bold">Đội ngũ giáo viên</h2>
+    <p class="mt-2 text-lg opacity-90">Trường THPT Phổ Yên — Đội ngũ giáo viên</p>
+  </div>
+</section>
+
+<main class="max-w-5xl mx-auto px-6 py-20 text-center">
+  <div class="bg-white shadow-md rounded-2xl p-10" data-aos="fade-up">
+    <h3 class="text-3xl font-bold text-sky-700">Trang đang phát triển</h3>
+    <p class="mt-4 text-slate-600 text-lg leading-relaxed">
+      Chúng tôi đang hoàn thiện nội dung giới thiệu đội ngũ giáo viên của Trường THPT Phổ Yên.<br/>
+      Trang sẽ chính thức ra mắt trong thời gian tới.
+    </p>
+    <div class="mt-8">
+      <span class="inline-block px-6 py-3 bg-sky-600 text-white rounded-xl text-base font-medium">
+        Sắp ra mắt • Coming soon
+      </span>
+    </div>
+  </div>
+</main>
+
+<footer class="footer mt-12 p-8 footer">
+  <div class="max-w-6xl mx-auto text-center text-white">
+    <p class="text-sm">© 2025 Trường THPT Phổ Yên • Địa chỉ: Phổ Yên, Thái Nguyên • Điện thoại: (024) 1234 5678</p>
+  </div>
+</footer>
+
+<!-- to top -->
+<button id="toTop" class="hidden fixed bottom-6 right-6 bg-white p-3 rounded-full shadow-lg">⬆️</button>
+
+<script src="assets/js/main.js"></script>
+<script>if(window.AOS) AOS.init();</script>
+</body>
+</html>
